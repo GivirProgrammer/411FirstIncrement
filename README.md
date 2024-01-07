@@ -6,4 +6,4 @@ After installing the Android Studio (latest version) it is important to create a
 Finally when "npx expo start" run, there will be a menu on the terminal. For virtual device, pressing "a" will redirect you to your virtual device.
 FOR ANDROID MOBILE PHONE
 Firstly "Expo Go" must be downloaded to your device.
-Then there will be a qr code inside the terminal after running "npx expo start". Via using that qr code, you can connect your device to our application.
+Then there will be a qr code inside the terminal after running "npx expo start". Via using that qr code, you can connect your Android device to our application.
