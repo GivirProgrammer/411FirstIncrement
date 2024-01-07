@@ -16,6 +16,10 @@ export default function HomeScreen() {
   const goToWorkout = () => {
     navigation.navigate("Workout History");
   }
+
+  const goToCreateWorkout = () => {
+    navigation.navigate("PersonInfo");
+  }
   return (
     <View style={{ flex: 1, margin: "auto", padding: 60 }}>
 
@@ -26,7 +30,7 @@ export default function HomeScreen() {
       </View>
 
       <View style={styles.buttonContainer}>
-        <Button color={"purple"} onPress={goToWorkout} title="Go to workout History ->"></Button>
+        <Button color={"purple"} onPress={goToCreateWorkout} title="Go to Create Workout ->"></Button>
       </View>
     </View>
   )

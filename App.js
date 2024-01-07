@@ -11,6 +11,8 @@ import HomeScreen from './Components/HomeScreen';
 import LoginScreen from './Components/LoginScreen';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HistoryPage from './Components/HistoryPage';
+import CreateWorkOut from './Components/CreateWorkOut';
+import InputPersonalInformation from './Components/InputPersonalInfo';
 
 
 const Tab = createBottomTabNavigator();
@@ -42,6 +44,9 @@ export default function App() {
     <Stack.Screen name="Home" component={HomeScreen}></Stack.Screen>
     <Stack.Screen name='Workout History' component={WorkoutHistory}></Stack.Screen>
     <Stack.Screen name='HistoryPage' component={HistoryPage}></Stack.Screen>
+    <Stack.Screen name='PersonInfo' component={InputPersonalInformation}></Stack.Screen>
+    <Stack.Screen name='CreateWorkOut' component={CreateWorkOut}></Stack.Screen>
+
   </Stack.Navigator>
   </NavigationContainer>
   
