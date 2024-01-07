@@ -15,17 +15,17 @@ export default function WorkoutHistory() {
   const markedDates = useMemo(() => {
     const activities = [{
       completed: 8,
-      date: "2024-02-05",
+      date: "2024-01-01",
       exerciseTypes: [{name:"Push up",completed:true},{name:"Pull up",completed:true},{name:"Push up",completed:false}],
       goal: 10
     }, {
       completed: 7,
-      date: "2024-02-06",
+      date: "2024-01-02",
       exerciseTypes: ["Push up", "Pull up", "cardio"],
       goal: 10
     }, {
       completed: 10,
-      date: "2024-02-07",
+      date: "2024-01-03",
       exerciseTypes: ["Push up", "Pull up", "cardio"],
       goal: 10
     }]

@@ -15,9 +15,9 @@ const InfoCard = ({ completed, description }) => {
     return (
         <View style={[styles.card,completed ? styles.trueCondition : styles.falseCondition]}>
             {/* <Image sour style={styles.title}>{title}</Image> */}
-            <Image source={require(`../assets/pullup.png`)} resizeMode="contain"></Image>
+            <Image style={{resizeMode:"cover",height:50,width:50}} source={require(`../assets/exercise.png`)} ></Image>
             <Text>{description}</Text>
-            
+            <Text style={{textAlign:"center"}}>{completed? "Completed": "Not Completed"}</Text>
         </View>
     );
 };
@@ -30,17 +30,17 @@ export default function HistoryPage({ route }) {
     const navigation = useNavigation();
     const activities = [{
         completed: 8,
-        date: "2024-02-05",
+        date: "2024-01-01",
         exerciseTypes: [{name:"Push up",completed:true},{name:"Pull up",completed:true},{name:"Cardio",completed:false}],
         goal: 10
     }, {
         completed: 7,
-        date: "2024-02-06",
+        date: "2024-01-02",
         exerciseTypes: [{name:"Push up",completed:true},{name:"Pull up",completed:false},{name:"Cardio",completed:false}],
         goal: 10
     }, {
         completed: 10,
-        date: "2024-02-07",
+        date: "2024-01-03",
         exerciseTypes: [{name:"Push up",completed:true},{name:"Pull up",completed:true},{name:"Cardio",completed:true}],
         goal: 10
     }]
@@ -88,9 +88,10 @@ const styles = StyleSheet.create({
     card: {
         
         borderRadius: 10,
-        padding: 20,
+        padding: 10,
         marginBottom: 20,
-        width: '100%',
+        width: '80%',
+        marginLeft:40,
         shadowColor: '#000',
         shadowOffset: {
             width: 0,
