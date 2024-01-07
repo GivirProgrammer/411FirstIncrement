@@ -5,7 +5,7 @@ export default function HomeScreen(){
 
     return(
         <View>
-            <Text>dsdıojfs</Text>
+            <Text>dasdsdsadfdsfssdıojfs</Text>
         </View>
     )
 }
